@@ -5,12 +5,33 @@ type FilterItemProps = {
 };
 
 export const FilterContainer = styled.div`
-  /*position: absolute;
-  right: 0;
-  top: 0;*/
+  position: relative;
+  left: 37rem;
+  top: 4rem;
+
+  @media (max-width: 1348px) {
+    left: 29rem;
+  }
+
+  @media (max-width: 1010px) {
+    left: 22rem;
+  }
+
+  @media (max-width: 756px) {
+    left: 14rem;
+  }
+
+  @media (max-width: 600px) {
+    left: 10rem;
+    top: -15rem;
+  }
 `;
 
 export const Filter = styled.div`
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: center;
