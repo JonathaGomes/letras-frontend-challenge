@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import { Input, Cards, Loading, Pagination, Filter } from "@/common";
+import { Input, Cards, Loading, Pagination, Filter, NoResults } from "@/common";
 import { client } from "@/services";
 import { gql } from "@apollo/client";
 import * as S from "./styles";
@@ -87,11 +87,14 @@ const HomePage = () => {
         <S.Image src="/logo.png" alt="Rick and Morty" />
         <Input onChange={onChange} />
 
-        <Filter handleFilter={handleFilter} />
+        {!loading && data.length === 0 && <NoResults />}
 
-        {!loading && data.length === 0 && <h1>Sem resultados</h1>}
-
-        {!loading && data.length > 0 && <Cards data={data} />}
+        {!loading && data.length > 0 && (
+          <>
+            {/*<Filter handleFilter={handleFilter} />*/}
+            <Cards data={data} />
+          </>
+        )}
 
         {!loading && data.length > 0 && (
           <Pagination page={page} handlePaginate={handlePaginate} />

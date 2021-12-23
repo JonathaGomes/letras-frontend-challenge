@@ -12,7 +12,7 @@ const Filter = ({ handleFilter }: FilterProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("");
   return (
-    <S.FilterContainer>
+    <S.Container>
       <RiFilter2Line
         style={{ cursor: "pointer" }}
         size={24}
@@ -43,7 +43,7 @@ const Filter = ({ handleFilter }: FilterProps) => {
           </S.FilterItem>
         </S.Filter>
       )}
-    </S.FilterContainer>
+    </S.Container>
   );
 };
 

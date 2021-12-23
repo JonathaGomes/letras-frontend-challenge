@@ -4,7 +4,7 @@ type FilterItemProps = {
   active: boolean;
 };
 
-export const FilterContainer = styled.div`
+export const Container = styled.div`
   position: relative;
   left: 37rem;
   top: 4rem;
