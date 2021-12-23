@@ -7,7 +7,7 @@ type FilterItemProps = {
 export const Container = styled.div`
   position: relative;
   left: 37rem;
-  top: 4rem;
+  top: 7rem;
 
   @media (max-width: 1348px) {
     left: 29rem;
@@ -23,7 +23,7 @@ export const Container = styled.div`
 
   @media (max-width: 600px) {
     left: 10rem;
-    top: -15rem;
+    top: -8rem;
   }
 `;
 

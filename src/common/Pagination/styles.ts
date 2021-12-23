@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   width: 100%;
 `;
 

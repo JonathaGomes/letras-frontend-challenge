@@ -91,7 +91,7 @@ const HomePage = () => {
 
         {!loading && data.length > 0 && (
           <>
-            {/*<Filter handleFilter={handleFilter} />*/}
+            <Filter handleFilter={handleFilter} />
             <Cards data={data} />
           </>
         )}

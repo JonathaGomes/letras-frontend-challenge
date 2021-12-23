@@ -5,9 +5,11 @@ export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 4.375rem;
 
   @media (max-width: 600px) {
     width: 21rem;
+    margin-top: 2.875rem;
   }
 `;
 

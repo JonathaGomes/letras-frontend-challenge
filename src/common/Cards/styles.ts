@@ -8,7 +8,11 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 1.25rem;
-  margin: 0 10rem;
+  margin: 7.75rem 10rem 0 10rem;
+
+  @media (max-width: 600px) {
+    margin: 2.5rem 10rem 0 10rem;
+  }
 `;
 
 export const Card = styled.div`
